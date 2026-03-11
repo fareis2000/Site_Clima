@@ -1,0 +1,22 @@
+.botao{
+    padding: 20px;
+    background-color: rgb(207, 15, 25);
+    border: none;
+    color: thistle;
+    border-radius: 5px; /* YAN */
+}
+
+.azul{
+    background-color: rgb(15, 15, 207);
+    border: none;
+}
+
+.amarelo{
+    background-color: rgb(207, 207, 15);
+    border: none;
+}
+
+.verde{
+    background-color: rgb(15, 207, 15);
+    border: none;
+}

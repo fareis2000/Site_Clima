@@ -1,0 +1,49 @@
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* use a more specific class to prevent global .container conflicts */
+.popup-container {
+  background-color: #2f5cd6;
+  border: 1px solid #3d3c53;
+  padding: 10px 24px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  animation: slideIn 1s ease-out;
+  min-width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-container p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.popup-container button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* simple slideIn animation if referenced in the container */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
