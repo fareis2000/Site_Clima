@@ -4,7 +4,7 @@ import Popup from "./Components/Popup/Popup";
 
 function App() {
 
-  const [climas, setClimas] = useState([]);
+  const [climas, setClimas] = useState([]); // comentario: estado para armazenar os dados do clima das cidades
 
   const API_KEY = import.meta.env.VITE_WEATHER_KEY;
 
